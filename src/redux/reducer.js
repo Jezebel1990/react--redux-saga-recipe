@@ -7,7 +7,6 @@ const initialState = {
 };
 
 const recipeReducer = (state=initialState, action) => {
-    // eslint-disable-next-line default-case
     switch(action.type) {
         case types.FETCH_RECIPE_START:
             return {
@@ -26,6 +25,8 @@ const recipeReducer = (state=initialState, action) => {
             loading: false,
             error: action.payload,
           };
+          default:
+            return state;
     }
 };
 export default recipeReducer;

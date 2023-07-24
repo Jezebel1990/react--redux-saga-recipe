@@ -29,7 +29,6 @@ var recipeReducer = function recipeReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
-  // eslint-disable-next-line default-case
   switch (action.type) {
     case types.FETCH_RECIPE_START:
       return _objectSpread({}, state, {
@@ -47,6 +46,9 @@ var recipeReducer = function recipeReducer() {
         loading: false,
         error: action.payload
       });
+
+    default:
+      return state;
   }
 };
 

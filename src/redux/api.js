@@ -7,6 +7,6 @@ const YOUR_APP_ID = "eaae0a2c";
 
 export const getRecipes = async (query) => {
     const url = `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;
-    await axios.get(url)
+    return await axios.get(url);
 }
 

@@ -35,38 +35,39 @@ function onLoadRecipeAsync(_ref) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          query = _ref.payload;
+          query = _ref.query;
           _context.prev = 1;
-          _context.next = 4;
+          console.log("query", query);
+          _context.next = 5;
           return (0, _effects.call)(_api.getRecipes, query);
 
-        case 4:
+        case 5:
           response = _context.sent;
-          _context.next = 7;
+          _context.next = 8;
           return (0, _effects.put)({
             type: types.FETCH_RECIPE_SUCCESS,
             payload: response.data
           });
 
-        case 7:
-          _context.next = 13;
+        case 8:
+          _context.next = 14;
           break;
 
-        case 9:
-          _context.prev = 9;
+        case 10:
+          _context.prev = 10;
           _context.t0 = _context["catch"](1);
-          _context.next = 13;
+          _context.next = 14;
           return (0, _effects.put)({
             type: types.FETCH_RECIPE_FAIL,
             payload: _context.t0
           });
 
-        case 13:
+        case 14:
         case "end":
           return _context.stop();
       }
     }
-  }, _marked, null, [[1, 9]]);
+  }, _marked, null, [[1, 10]]);
 }
 
 function onLoadRecipe() {

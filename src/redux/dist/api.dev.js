@@ -23,6 +23,9 @@ var getRecipes = function getRecipes(query) {
           return regeneratorRuntime.awrap(_axios["default"].get(url));
 
         case 3:
+          return _context.abrupt("return", _context.sent);
+
+        case 4:
         case "end":
           return _context.stop();
       }

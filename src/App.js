@@ -78,8 +78,7 @@ favoritesText: {
   justifyItems: 'center',
   color: '#ff83b2', 
   fontFamily: 'Roboto',
-}
-
+},
 
 }));
 
@@ -163,13 +162,15 @@ const handleShareClick =  (index) => {
 
     <div className='App'>
      <form className={classes.root} noValidate autoCapitalize='on'>
-     
      <TextField
       id='outlined-basic' 
       variant='outlined' 
       type="text" 
       value={search} 
       onChange={(e) => setSearch(e.target.value)}
+      InputProps={{
+        style: { color: '#363636' }
+      }}
       />
 
       
@@ -189,9 +190,9 @@ const handleShareClick =  (index) => {
     
      <Grid container className={gridClasses.root} spacing={2}>
       <Grid item xs={12}>
-        <Grid container justifyContent="center" spacing={2}>
+        <Grid container justifyContent="center" spacing={2} >
           {recipes && recipes.hits && recipes.hits.map((item, index) => (
-            <Grid key={index} item>
+            <Grid key={index} item >
 
 
          <Card className={cardClasses.root}>
@@ -222,7 +223,6 @@ const handleShareClick =  (index) => {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

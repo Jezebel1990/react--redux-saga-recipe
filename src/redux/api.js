@@ -10,3 +10,5 @@ export const getRecipes = async (query) => {
     return await axios.get(url);
 }
 
+
+

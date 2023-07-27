@@ -108,7 +108,7 @@ const cardClasses= cardStyles();
 const [expanded, setExpanded] = useState(false);
 const [cardValue, setCardValue] = useState("");
 const [search, setSearch] = useState("");
-const [query, setQuery] = useState("bolo");
+const [query, setQuery] = useState("frango");
 const [favorites, setFavorites] = useState([]);
 const [showFavoritesText, setShowFavoritesText] = useState(false);
 const  { recipes } = useSelector((state) => state.data);

@@ -26,7 +26,7 @@ import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
 
 const cardStyles = makeStyles((theme) => ({
   root: {
-    width: 345,
+    padding: '20px',
   },
 
   media: {
@@ -68,12 +68,16 @@ redIcon: {
   color: '#6a1e04',
 },
 headerText: {
+  fontSize: '28px',
   textAlign: 'center',
+  marginBottom: '20px',
   justifyItems: 'center',
   color: 'white', 
   fontFamily: 'Roboto',
 },
 favoritesText: {
+  fontSize:'24px',
+  marginBottom: '20px',
   textAlign: 'center',
   justifyItems: 'center',
   color: '#ff83b2', 
@@ -179,7 +183,8 @@ const handleShareClick =  (index) => {
         backgroundColor: "#ff83b2",
         color: "white",
         width: "80px",
-        height: "50px"
+        height: "50px",
+        marginTop: "10px",
       }}
         onClick={updateSearch}
         >

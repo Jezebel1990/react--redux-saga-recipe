@@ -4,6 +4,11 @@ Welcome this project is a responsive cooking recipes app.
 
 
 ##  👀 Preview
+![Captura de tela 2023-07-27 142723](https://github.com/Jezebel1990/react-redux-saga-recipe/assets/75287031/d190b524-6b4b-4c68-99e9-f7eb753c291c)
+![Captura de tela 2023-07-28 005303](https://github.com/Jezebel1990/react-redux-saga-recipe/assets/75287031/bac1e446-413c-4530-968a-9d21ab5c103c)
+![Captura de tela 2023-07-28 005605](https://github.com/Jezebel1990/react-redux-saga-recipe/assets/75287031/bf0ab618-7da9-4013-8b08-112497e915e2)
+![Captura de tela 2023-07-28 001952](https://github.com/Jezebel1990/react-redux-saga-recipe/assets/75287031/d6af8ef5-94dd-40da-9af4-a4ad0552b5b6)
+
 
 
 ## ⚙️ Technologies
@@ -14,8 +19,12 @@ Welcome this project is a responsive cooking recipes app.
 
 
 ## 🎯 Application features
-  - [x] - Home;
-  - [x] - Zoom Image;
+  - [x] - Action;
+  - [x] - Api;
+  - [x] - Reducer;
+  - [x] - Root Reducer;
+  - [x] - Sagas;
+  - [x] - store;
 
 
   ## 📂  Access to the project
